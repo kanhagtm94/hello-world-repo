@@ -1,13 +1,13 @@
 # This is a basic workflow to help you get started with Actions
-
 name: Hello World
-on:
-  # Triggers the workflow on push request events but only for the "main" branch
-  push:
-    branches: [ "main" ]
-    jobs:
-    name: "hello-job"
+on: push
+
+jobs:
+  hello-job:
+    name: Hello Job
     runs-on: ubuntu-latest
-    step:
-    name: "Echo text"
-    run: echo "Hello, world!"
+    steps:
+      - name: Echo text
+        run: echo "Hello, world"
+
+		
