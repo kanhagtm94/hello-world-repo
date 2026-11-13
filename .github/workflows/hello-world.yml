@@ -1,15 +1,15 @@
 # This is a basic workflow to help you get started with Actions
 name: Hello World
-on: push
+
+on:
+  push:
 
 jobs:
   hello-job:
     name: Hello Job
     runs-on: ubuntu-latest
-    
-	steps:
+
+    steps:
       - name: Echo text
         run: |
-		  echo "Hello, world"
-
-		
+          echo "Hello, world"
